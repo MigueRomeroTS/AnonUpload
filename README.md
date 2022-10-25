@@ -1,3 +1,3 @@
 # AnonUpload
 
-An Java program to upload files in AnonFiles instead of the API
+An Java program to upload files in AnonFiles throught the API
