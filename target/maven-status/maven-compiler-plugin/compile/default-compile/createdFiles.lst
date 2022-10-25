@@ -1,0 +1,5 @@
+com\curso\appuploadfiles\AnonApi.class
+com\curso\appuploadfiles\GetRequestException.class
+com\curso\appuploadfiles\AppUploadFiles.class
+com\curso\appuploadfiles\InvalidTokenException.class
+com\curso\appuploadfiles\PostRequestException.class
