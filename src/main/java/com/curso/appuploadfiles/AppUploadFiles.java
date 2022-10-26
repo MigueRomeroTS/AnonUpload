@@ -6,6 +6,10 @@
 package com.curso.appuploadfiles;
 
 import java.io.File;
+import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -16,7 +20,13 @@ public class AppUploadFiles {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         AnonApi anon = new AnonApi("64afd48afef3e168");
+        FileAnon file = new FileAnon("C:\\Users\\miromero\\Desktop\\pruebaxd.txt");
+
         
-        System.out.println(anon.upload(new File("C:\\Users\\miromero\\Desktop\\TestFile.txt")));
+        try {
+            System.out.println(anon.upload(file.getZippedFile()));
+        } catch (NoSuchAlgorithmException | IOException ex) {
+            Logger.getLogger(AppUploadFiles.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
